@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Interacción con JavaScript</title>
+  <style>
+    #resultado {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interacción con JavaScript</h1>
+  <button id="miBoton">Haz clic aquí</button>
+  <button id="restablecer">Restablecer</button>
+  <p id="resultado">Esperando clic...</p>
+  <p id="contador">Clicks: 0</p>
+
+  <script>
+    const boton = document.getElementById("miBoton");
+    const restablecer = document.getElementById("restablecer");
+    const parrafo = document.getElementById("resultado");
+    const contador = document.getElementById("contador");
+    let cantidadDeClicks = 0;
+
+    boton.addEventListener("click", function() {
+      cantidadDeClicks++;
+      parrafo.textContent = "¡Has hecho clic en el botón!";
+      parrafo.style.color = "blue";
+      parrafo.style.fontWeight = "bold";
+      parrafo.style.fontSize = "20px";
+      parrafo.style.backgroundColor = "#e0f0ff";
+      contador.textContent = `Clicks: ${cantidadDeClicks}`;
+    });
+
+    restablecer.addEventListener("click", function() {
+      parrafo.textContent = "Esperando clic...";
+      parrafo.style = null;
+      cantidadDeClicks = 0;
+      contador.textContent = "Clicks: 0";
+    });
+  </script>
+</body>
+</html>
