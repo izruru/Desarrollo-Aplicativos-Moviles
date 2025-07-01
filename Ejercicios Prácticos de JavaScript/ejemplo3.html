@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Funciones y Condicionales</title>
+</head>
+<body>
+  <h1>Calculadora de Edad</h1>
+  <label for="fechaNacimiento">Fecha de nacimiento:</label>
+  <input type="date" id="fechaNacimiento">
+  <button id="calcular">Calcular Edad</button>
+  <p id="resultadoEdad"></p>
+  <h3>Historial:</h3>
+  <ul id="historial"></ul>
+
+  <script>
+    function calcularEdad(fechaNacimientoStr) {
+      const hoy = new Date();
+      const nacimiento = new Date(fechaNacimientoStr);
+      const edad = hoy.getFullYear() - nacimiento.getFullYear();
+      const mesActual = hoy.getMonth();
+      const diaActual = hoy.getDate();
+      const mesNacimiento = nacimiento.getMonth();
+      const diaNacimiento = nacimiento.getDate();
+
+      let edadExacta = edad;
+      if (mesActual < mesNacimiento || (mesActual === mesNacimiento && diaActual < diaNacimiento)) {
+        edadExacta--;
+      }
+
+      if (edadExacta < 0) {
+        return "El año de nacimiento no puede ser futuro.";
+      } else if (edadExacta > 120) {
+        return "¿Estás seguro de ese año?";
+      } else {
+        return `Tienes aproximadamente ${edadExacta} años.`;
+      }
+    }
+
+    function agregarAlHistorial(fecha) {
+      const historial = document.getElementById("historial");
+      const item = document.createElement("li");
+      item.textContent = fecha;
+      historial.prepend(item);
+      if (historial.children.length > 5) {
+        historial.removeChild(historial.lastChild);
+      }
+    }
+
+    document.getElementById("calcular").addEventListener("click", function () {
+      const fechaNacimiento = document.getElementById("fechaNacimiento").value;
+      if (!fechaNacimiento) {
+        document.getElementById("resultadoEdad").textContent = "Por favor, seleccioná una fecha.";
+        return;
+      }
+
+      const resultado = calcularEdad(fechaNacimiento);
+      document.getElementById("resultadoEdad").textContent = resultado;
+      agregarAlHistorial(fechaNacimiento);
+    });
+  </script>
+</body>
+</html>
