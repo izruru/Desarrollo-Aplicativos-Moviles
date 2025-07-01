@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Primer Programa JavaScript</title>
+</head>
+<body>
+  <h1>Mi primer script de JavaScript</h1>
+
+  <script>
+    // Mi primer programa en JavaScript
+    console.log("¡Hola Mundo desde la consola!");
+
+    // Variables básicas
+    let nombre = "Lucas";
+    const edad = 25;
+    var ciudad = "Rosario";
+
+    // Nuevos tipos de datos
+    let esEstudiante = true;
+    let hobbies = ["programar", "leer", "jugar"];
+    let persona = {
+      nombre: "Lucas",
+      edad: 25,
+      ciudad: "Rosario",
+      estudiante: true
+    };
+
+    // Mostrar variables individuales
+    console.log("Nombre:", nombre);
+    console.log("Edad:", edad);
+    console.log("Ciudad:", ciudad);
+
+    // Concatenación tradicional
+    console.log("Hola " + nombre + ", tienes " + edad + " años.");
+
+    // Template literals
+    console.log(`Hola ${nombre}, tienes ${edad} años y vivís en ${ciudad}.`);
+
+    // Mostrar tipos nuevos
+    console.log("¿Es estudiante?", esEstudiante);
+    console.log("Hobbies:", hobbies);
+    console.log("Objeto persona:", persona);
+
+    // Mostrar tabla en consola
+    const personas = [
+      { nombre: "Lucas", edad: 25, ciudad: "Rosario" },
+      { nombre: "Ana", edad: 30, ciudad: "Buenos Aires" },
+      { nombre: "Tomás", edad: 22, ciudad: "Córdoba" }
+    ];
+
+    console.table(personas);
+  </script>
+</body>
+</html>
