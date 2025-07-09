@@ -1,0 +1,32 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Otto Apocalypse",
+      "email": "admin@honkai.com",
+      "password": "k423",
+      "rol": "admin"
+    },
+    {
+      "id": 2,
+      "nombre": "Raiden Mei",
+      "email": "manager@honkai.com",
+      "password": "herrscher",
+      "rol": "manager"
+    },
+    {
+      "id": 3,
+      "nombre": "Kiana Kaslana",
+      "email": "employee@honkai.com",
+      "password": "herrschofvoid",
+      "rol": "employee"
+    },
+    {
+      "id": 4,
+      "nombre": "Bronya Zaychik",
+      "email": "guest@honkai.com",
+      "password": "silverwolf",
+      "rol": "guest"
+    }
+  ]
+}
