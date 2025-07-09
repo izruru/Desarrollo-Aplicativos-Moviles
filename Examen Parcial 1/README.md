@@ -3,7 +3,7 @@
 Este sistema está hecho en TypeScript y simula un login básico para validar usuarios desde un archivo JSON.
 
 
-## ¿Qué hace?
+## ¿Que hace?
 
 - Pide email y contraseña
 - Valida formato del email
