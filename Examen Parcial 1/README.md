@@ -32,6 +32,12 @@ Cada rol tiene un mensaje de bienvenida diferente, estan escritos con referencia
 
 Esto es solo estético, no cambia la lógica del sistema.
 
+## Mensaje por dia de acceso
+
+Se verifica que dia es y se notifica al usuario si dicho dia esta permitido el acceso al servidor o no, Nuevamente haciendo referencia al juego *Honkai Impact 3rd* 
+
+> Ejemplo: 
+> `El Imaginary Tree está sellado los jueves por ordenes de Otto Apocalypse. No se permite el ingreso al sistema.`
 
 ## Cómo usarlo
 
@@ -48,6 +54,7 @@ Esto es solo estético, no cambia la lógica del sistema.
 ## Casos de Prueba
 
 - Login exitoso con cada rol
+- Dia de acceso correcto
 - Email incorrecto
 - Contraseña incorrecta
 - Email con formato inválido
