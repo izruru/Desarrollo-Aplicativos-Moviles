@@ -14,6 +14,22 @@ interface Usuario {
 const datos = fs.readFileSync('./users.json', 'utf-8');
 const { usuarios }: { usuarios: Usuario[] } = JSON.parse(datos);
 
+// Verificar si el día de acceso es válido
+function verificarDiaDeAcceso(): boolean {
+  const diasBloqueados = [2, 4, 6]; // Martes, Jueves y Sábado
+  const hoy = new Date().getDay();  
+
+  if (diasBloqueados.includes(hoy)) {
+    const nombresDias = ["domingos", "lunes", "martes", "miércoles", "jueves", "viernes", "sábados"];
+    const diaNombre = nombresDias[hoy];
+
+    console.log(`El Imaginary Tree está sellado los ${diaNombre} por ordenes de Otto Apocalypse. No se permite el ingreso al sistema.`);
+    return false;
+  }
+
+  return true;
+}
+
 // Funcion para validar el mail
 function validarEmail(email: string): boolean {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -47,7 +63,6 @@ function mensajePorRol(usuario: Usuario): string {
   }
 }
 
-
 // Funcion principal de login
 function login(email: string, password: string): void {
   if (!email || !validarEmail(email)) {
@@ -80,8 +95,14 @@ function login(email: string, password: string): void {
   console.log(mensajePorRol(usuario));
 }
 
+// Verificar si el día de acceso es válido antes de continuar
+if (!verificarDiaDeAcceso()) {
+  process.exit(0); 
+}
+
 // Ejemplo de uso
 const emailInput = "employee@honkai.com";
 const passwordInput = "herrschofvoid";
 
 login(emailInput, passwordInput);
+
