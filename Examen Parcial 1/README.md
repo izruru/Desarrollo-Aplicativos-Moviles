@@ -41,7 +41,7 @@ Esto es solo estético, no cambia la lógica del sistema.
    npm install -g ts-node typescript
 2. Ejecutar el archivo
    ```bash
-   npm install -g ts-node typescript
+   npx ts-node examen-login.ts
 3. Listo pa
 
 
