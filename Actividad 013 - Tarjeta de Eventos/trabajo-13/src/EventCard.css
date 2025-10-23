@@ -1,0 +1,49 @@
+.event-card {
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.event-card h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.event-card h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+.event-card p {
+    margin: 5px 0;
+}
+
+.attendees-info {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+}
+.attendees-info span {
+    margin-right: 8px;
+    font-size: 1.4em;
+}
+
+
+.music {
+    background-color: #9333ea; 
+}
+.sports {
+    background-color: #16a34a; 
+}
+.tech {
+    background-color: #2563eb;
+}
+.food {
+    background-color: #f97316; 
+}

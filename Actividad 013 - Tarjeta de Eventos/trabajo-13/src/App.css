@@ -1,0 +1,11 @@
+.App {
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjetas-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
