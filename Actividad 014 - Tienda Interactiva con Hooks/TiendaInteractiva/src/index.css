@@ -1,0 +1,53 @@
+/* src/index.css */
+body { 
+  margin:0; font-family: Inter, system-ui, -apple-system; 
+  background:#f7f7fb; 
+  color:#111; 
+  padding:18px; 
+}
+
+.app { 
+  max-width:900px; 
+  margin:0 auto; 
+}
+.product-grid { 
+  display:grid; 
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); 
+  gap:12px; margin-bottom:20px; 
+}
+
+.card { 
+  background:#fff; 
+  padding:12px; 
+  border-radius:10px; 
+  box-shadow:0 6px 14px rgba(10,10,20,0.06); 
+  border:1px solid #eee;
+}
+
+.controls{ 
+  display:flex; 
+  gap:8px; 
+  align-items:center; 
+  margin-top:8px 
+}
+
+.btn{ 
+  padding:6px 10px; 
+  border-radius:8px; 
+  border:1px solid #ddd; 
+  cursor:pointer; 
+  background:#fff 
+}
+
+.counter{ 
+  font-weight:700; 
+  min-width:36px; 
+  text-align:center 
+}
+
+.reloj{ 
+  text-align:center; 
+  margin-top:18px; 
+  font-family:monospace; 
+  font-size:18px 
+}
