@@ -1,0 +1,21 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.confirmacion {
+  padding: 20px;
+  background: #e9ffe9;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.confirmacion h2 {
+  color: #008a28;
+}
+
