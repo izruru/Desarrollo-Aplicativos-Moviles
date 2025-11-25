@@ -1,0 +1,22 @@
+.ListaUsuarios-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+button {
+    margin: 10px;
+}
+
+.paginacion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.paginacion-container span {
+    font-weight: bold;
+    color: #3F37C9;
+    font-size: 16px;
+}

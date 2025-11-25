@@ -1,0 +1,25 @@
+.tarjeta-usuario {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 450px;
+    box-shadow: 0px 4px 10px rgba(63, 55, 201, 0.2);
+    border-left: 6px solid #3F37C9;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-usuario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 14px rgba(63, 55, 201, 0.3);
+}
+
+.tarjeta-usuario h2 {
+    margin: 0 0 10px 0;
+    color: #4361EE;
+}
+
+.tarjeta-usuario p {
+    margin: 5px 0;
+    font-size: 15px;
+}

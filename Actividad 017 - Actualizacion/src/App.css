@@ -1,0 +1,43 @@
+body {
+    background: #ffced4;
+    font-family: "Segoe UI", sans-serif;
+    color: #1B1B1B;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #3F37C9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #4361EE;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #4895EF;
+}
+
+button:disabled {
+    background: #9FB6FF;
+    cursor: not-allowed;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 250px;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+}
