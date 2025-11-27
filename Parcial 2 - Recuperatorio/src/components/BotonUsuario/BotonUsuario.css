@@ -1,0 +1,31 @@
+.boton-usuario {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #3d5afe, #1a237e);
+  color: #e7ecff;
+
+  border: 2px solid #5a78ff;
+  border-radius: 12px;
+
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+
+  box-shadow: 0 0 12px rgba(90, 120, 255, 0.45);
+}
+
+.boton-usuario:hover {
+  background: linear-gradient(135deg, #6c8aff, #2c3ebd);
+  transform: translateY(-3px);
+
+  box-shadow: 0 0 20px rgba(115, 155, 255, 0.7);
+}
+
+.boton-usuario:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 10px rgba(115, 155, 255, 0.5);
+}
+
+

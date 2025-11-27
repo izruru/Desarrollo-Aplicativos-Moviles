@@ -1,0 +1,26 @@
+.app-container {
+  padding: 30px;
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+
+  background: linear-gradient(135deg, #0a0f2c, #101a45, #1e2f75);
+  border-radius: 14px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.45);
+  color: #dbe6ff;
+}
+
+h1 {
+  font-family: "Segoe UI", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #9dc6ff;
+  margin-bottom: 22px;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 20px;
+}

@@ -1,0 +1,43 @@
+.tarjeta-bienvenida {
+  margin-top: 28px;
+  padding: 20px 25px;
+
+  background: linear-gradient(135deg, #111b3d, #172656, #1f3278);
+  border-radius: 14px;
+
+  border: 2px solid #6fa4ff;
+
+  box-shadow: 0 0 20px rgba(110, 160, 255, 0.45);
+
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  animation: slideIn 0.3s ease-out;
+}
+
+.tarjeta-bienvenida h2 {
+  color: #a9cfff;
+  font-size: 24px;
+  text-shadow: 0 0 6px rgba(150, 200, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.tarjeta-bienvenida p {
+  color: #dce7ff;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
